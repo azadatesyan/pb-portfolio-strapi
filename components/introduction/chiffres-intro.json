@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_introduction_chiffres_intros",
+  "info": {
+    "name": "chiffres-intro",
+    "icon": "list-ol",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "chiffre": {
+      "type": "integer"
+    },
+    "chiffre_description": {
+      "type": "string"
+    }
+  }
+}

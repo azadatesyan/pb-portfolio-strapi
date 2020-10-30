@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sprint_problematiques",
+  "info": {
+    "name": "problematique",
+    "icon": "exclamation"
+  },
+  "options": {},
+  "attributes": {
+    "problematique": {
+      "type": "richtext",
+      "required": true
+    },
+    "ordre": {
+      "type": "integer",
+      "required": true,
+      "unique": false
+    }
+  }
+}

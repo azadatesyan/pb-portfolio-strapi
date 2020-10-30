@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "lien_url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "tags": {
+      "type": "richtext",
+      "required": true
+    },
+    "introduction": {
+      "type": "richtext",
+      "required": true
+    },
+    "chiffres_intro": {
+      "type": "component",
+      "repeatable": true,
+      "component": "introduction.chiffres-intro"
+    },
+    "photo_paragraphe": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sprint.photo-paragraphe"
+    },
+    "slider_paragraphe": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sprint.paragraphe-carrousel"
+    },
+    "problematique": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sprint.problematique"
+    },
+    "citation_utilisateur": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sprint.citation-utilisateur"
+    },
+    "retour_utilisateur": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sprint.retour-utilisateur"
+    }
+  }
+}

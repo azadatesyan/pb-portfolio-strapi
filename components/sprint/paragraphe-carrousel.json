@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sprint_paragraphe_carrousels",
+  "info": {
+    "name": "paragraphe_carrousel",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ordre": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

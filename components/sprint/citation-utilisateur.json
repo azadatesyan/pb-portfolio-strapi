@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sprint_citation_utilisateurs",
+  "info": {
+    "name": "citation_utilisateur",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "citation": {
+      "type": "richtext",
+      "required": true
+    },
+    "auteur": {
+      "type": "text",
+      "required": true
+    },
+    "ordre": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

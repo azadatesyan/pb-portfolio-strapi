@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sprint_photo_paragraphes",
+  "info": {
+    "name": "Photo + Paragraphe",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ordre": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "orientation": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ],
+      "default": "horizontal",
+      "required": true
+    }
+  }
+}
