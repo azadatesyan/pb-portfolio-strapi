@@ -24,7 +24,7 @@
     "ordre": {
       "type": "integer",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }
