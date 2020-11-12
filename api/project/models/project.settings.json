@@ -67,10 +67,15 @@
       "repeatable": true,
       "component": "sprint.citation-utilisateur"
     },
-    "retour_utilisateur": {
+    "paragraphe_texte": {
       "type": "component",
       "repeatable": true,
       "component": "sprint.retour-utilisateur"
+    },
+    "image_seule": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sprint.image-seule"
     }
   }
 }

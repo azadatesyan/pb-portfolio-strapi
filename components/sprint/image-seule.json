@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sprint_image_seules",
+  "info": {
+    "name": "image_seule",
+    "icon": "audio-description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ordre": {
+      "type": "integer",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "titre": {
+      "type": "string"
+    }
+  }
+}
