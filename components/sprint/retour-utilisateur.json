@@ -15,6 +15,9 @@
       "type": "integer",
       "required": true,
       "min": 1
+    },
+    "titre": {
+      "type": "string"
     }
   }
 }
